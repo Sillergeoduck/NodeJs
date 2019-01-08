@@ -43,6 +43,13 @@
         })
     });
 
+    app.get('/project', (req, res) => {
+       res.render('project.hbs', {
+           pageTitle: 'Project Page',
+           Description: 'This is the project page'
+       })
+    });
+
     app.get('/bad', (req,res) => {
         res.send({
             error: 'The page that you are looking for is not Available!!!',
